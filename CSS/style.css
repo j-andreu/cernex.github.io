@@ -81,6 +81,7 @@ body{
 	left: 700px;
 	top: 425px;
 	border: 1px solid black;
+	letter-spacing: 1px;
 
 	text-align: left;
 	word-spacing: 1px;
@@ -88,6 +89,27 @@ body{
 }
 
 .link_details:hover .info_details{
+	display: block;
+}
+
+.info_details2{
+	font-size: 17px;
+	font-weight: lighter;
+	color: black;
+
+	position: absolute;
+	width: 455px;
+	height: 200px;
+	left: 695px;
+	top: 425px;
+	letter-spacing: 1px;
+
+	text-align: right;
+	word-spacing: 1px;
+	display: none;
+}
+
+.link_details:hover .info_details2{
 	display: block;
 }
 
@@ -103,6 +125,7 @@ body{
 	box-sizing: border-box;
 	border: solid 1px black;
 	position: absolute;
+	letter-spacing: 1px;
 
 	text-align: left;
 	word-spacing: 1px;
@@ -113,15 +136,52 @@ body{
 	display: block;
 }
 
-/*.btn1{
+.info_token2{
+	font-size: 17px;
+	font-weight: lighter;
 	color: black;
-	background-color: transparent;
+
+	width: 455px;
+	height: 200px;
+	top: 425px;
+	left: 695px;
+	position: absolute;
+	letter-spacing: 1px;
+
+	text-align: right;
+	word-spacing: 1px;
+	display: none;
+}
+
+.link_token:hover .info_token2{
+	display: block;
+}
+
+
+.btn_verify{
+	position: absolute;
+	top: 635px;
+	left: 720px;
+	width: 150px;
+	height: 40px;
+	color: white;
+	background-color: #00398F ;
 	border: none;
+	border-radius: 15px;
 	font-family: 'Lexend Zetta';
-	font-size: 30px;
-	letter-spacing: 2px;
+	font-size: 20px;
+	letter-spacing: 4px;
 	cursor: pointer;
-}*/
+}
+
+.verify{
+	color: black;
+	font-size: 10px;
+	position: absolute;
+	top: 633px;
+	left: 885px;
+	text-align: left;
+}
 
 .btn2{
 	position: absolute;
@@ -142,6 +202,9 @@ body{
 
 .btn2:hover{
 	border-bottom: 5px solid blue;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .btn3{
@@ -163,9 +226,12 @@ body{
 
 .btn3:hover{
 	border-bottom: 5px solid blue;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
 }
 
-/*.back_btn{
+.back_btn{
 	color: black;
 	font-size: 15px;
 	font-family: 'Lexend Zetta';
@@ -181,10 +247,8 @@ body{
 
 .back_btn:hover{
 	font-size: 18px;
-	border: solid 1px black;
-	border-radius: 5px;
 }
-*/
+
 .imagen{
 	box-sizing: border-box;
 	position: absolute;
@@ -196,13 +260,14 @@ body{
 	width: 100%;
 	height: 300px;
 	top: 900px;
+	padding-bottom: 0%;
 	position: absolute;
 	background-color: rgb(240, 240, 240);
 }
 
 .footer h1{
 	position: absolute;
-	top: 965px;
+	top: 25px;
 	left: 100px;
 	color: black;
 	font-family: 'Lexend Zetta';
@@ -212,7 +277,7 @@ body{
 
 .footer input{
 	position: absolute;
-	top: 1040px;
+	top: 100px;
 	left: 100px;
 	width: 250px;
 	height: 35px;
@@ -226,7 +291,7 @@ body{
 	width: 60px;
 	height: 39px;
 	position: absolute;
-	top: 1040px;
+	top: 100px;
 	left: 360px;
 	background: transparent;
 	border: solid 	1px black;
@@ -234,8 +299,8 @@ body{
 }
 .footer h2{
 	position: absolute;
-	top: 965px;
-	left: 300px;
+	top: 25px;
+	left: 992px;
 	color: black;
 	font-family: 'Lexend Zetta';
 	font-size: 20px;
@@ -244,7 +309,7 @@ body{
 
 .footer h3{
 	position: absolute;
-	top: 1020px;
+	top: 100px;
 	left: 995px;
 	color: black;
 	font-family: 'Lexend Zetta';
@@ -254,7 +319,7 @@ body{
 }
 
 .line{
-	top: 1135px;
+	top: 249px;
 	left: 85px;
 	background: transparent;
 	border-top: black;
@@ -265,7 +330,7 @@ body{
 
 .footer h4{
 	position: absolute;
-	top: 1135px;
+	top: 250px;
 	left: 85px;
 	color: black;
 	font-size: 15px;
@@ -275,7 +340,7 @@ body{
 
 .footer h5{
 	position: absolute;
-	top: 945px;
+	top: 8px;
 	left: 750px;
 	color: black;
 	font-family: 'Lexend Zetta';
@@ -286,7 +351,7 @@ body{
 
 .footer h6{
 	position: absolute;
-	top: 1000px;
+	top: 75px;
 	left: 750px;
 	color: black;
 	font-size: 15px;
