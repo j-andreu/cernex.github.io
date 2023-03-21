@@ -24,10 +24,15 @@ body{
 	justify-content: space-between;
 	padding: 0 24px;
 	box-sizing: border-box;
-	position: fixed;
 	color: black;
 	font-size: 30px;
 	background-color: rgb(240, 240, 240);
+}
+
+.navbar a{
+	text-decoration: none;
+	color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo{
@@ -69,49 +74,7 @@ body{
 	color: rgb(71, 71, 71);
 }
 
-.info_details{
-	font-size: 17px;
-	font-weight: lighter;
-	color: black;
 
-	box-sizing: border-box;
-	position: absolute;
-	width: 455px;
-	height: 200px;
-	left: 700px;
-	top: 425px;
-	border: 1px solid black;
-	letter-spacing: 1px;
-
-	text-align: left;
-	word-spacing: 1px;
-	display: none;
-}
-
-.link_details:hover .info_details{
-	display: block;
-}
-
-.info_details2{
-	font-size: 17px;
-	font-weight: lighter;
-	color: black;
-
-	position: absolute;
-	width: 455px;
-	height: 200px;
-	left: 695px;
-	top: 425px;
-	letter-spacing: 1px;
-
-	text-align: right;
-	word-spacing: 1px;
-	display: none;
-}
-
-.link_details:hover .info_details2{
-	display: block;
-}
 
 .info_token{
 	font-size: 17px;
@@ -126,6 +89,8 @@ body{
 	border: solid 1px black;
 	position: absolute;
 	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-left: 10px;
 
 	text-align: left;
 	word-spacing: 1px;
@@ -139,16 +104,17 @@ body{
 .info_token2{
 	font-size: 17px;
 	font-weight: lighter;
-	color: black;
+	color: #535353;
 
 	width: 455px;
 	height: 200px;
 	top: 425px;
-	left: 695px;
+	left: 960px;
 	position: absolute;
 	letter-spacing: 1px;
+	padding: 5px;
 
-	text-align: right;
+	text-align: left;
 	word-spacing: 1px;
 	display: none;
 }
@@ -157,11 +123,10 @@ body{
 	display: block;
 }
 
-
 .btn_verify{
 	position: absolute;
 	top: 635px;
-	left: 720px;
+	left: 855px;
 	width: 150px;
 	height: 40px;
 	color: white;
@@ -172,17 +137,17 @@ body{
 	font-size: 20px;
 	letter-spacing: 4px;
 	cursor: pointer;
+	transition: ease all 200ms;
 }
 
-.verify{
-	color: black;
-	font-size: 10px;
-	position: absolute;
-	top: 633px;
-	left: 885px;
-	text-align: left;
+.btn_verify:hover{
+	width: 300px;
+	height: 40px;
+	background-color: #00398F;
+	top: 635px;
+	left: 790px;
 }
-
+/*//////////////////////////// DETAILS ////////////////////////////*/
 .btn2{
 	position: absolute;
 	left: 700px;
@@ -200,12 +165,66 @@ body{
 	transition: all 0.3s ease;
 }
 
+.btn2 a{
+	text-decoration: none;
+	color: black;
+}
+
 .btn2:hover{
-	border-bottom: 5px solid blue;
+	border-bottom: 5px solid #00398F;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	border-top: 1px solid black;
 }
+
+.info_details{
+	font-size: 17px;
+	font-weight: lighter;
+	color: black;
+
+	box-sizing: border-box;
+	position: absolute;
+	width: 455px;
+	height: 200px;
+	left: 700px;
+	top: 425px;
+	border: 1px solid black;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-left: 10px;
+
+	text-align: left;
+	word-spacing: 1px;
+	display: none;
+}
+
+.link_details:hover .info_details{
+	display: block;
+}
+
+.info_details2{
+	font-size: 17px;
+	font-weight: lighter;
+	color: #535353;
+
+	position: absolute;
+	width: 455px;
+	height: 200px;
+	left: 938px;
+	top: 425px;
+	letter-spacing: 1px;
+	padding: 5px;
+
+	text-align: left;
+	word-spacing: 1px;
+	display: none;
+}
+
+.link_details:hover .info_details2{
+	display: block;
+}
+
+/*//////////////////////////// DETAILS ////////////////////////////*/
 
 .btn3{
 	position: absolute;
@@ -225,13 +244,13 @@ body{
 }
 
 .btn3:hover{
-	border-bottom: 5px solid blue;
+	border-bottom: 5px solid #00398F;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	border-top: 1px solid black;
 }
 
-.back_btn{
+/*.back_btn{
 	color: black;
 	font-size: 15px;
 	font-family: 'Lexend Zetta';
@@ -247,7 +266,7 @@ body{
 
 .back_btn:hover{
 	font-size: 18px;
-}
+}*/
 
 .imagen{
 	box-sizing: border-box;
@@ -267,7 +286,7 @@ body{
 
 .footer h1{
 	position: absolute;
-	top: 25px;
+	top: 35px;
 	left: 100px;
 	color: black;
 	font-family: 'Lexend Zetta';
@@ -281,10 +300,16 @@ body{
 	left: 100px;
 	width: 250px;
 	height: 35px;
-	background: black;
+	color: white;
+	background: rgba(0, 0, 0, 0.493);
 	border: solid 1px black;
+	border-radius: 5px;
 	font-family: 'Lexend Zetta';
 	font-size: 15px;
+}
+
+.footer ::placeholder{
+	color: rgb(211, 211, 211);
 }
 
 .email{
@@ -293,13 +318,21 @@ body{
 	position: absolute;
 	top: 100px;
 	left: 360px;
-	background: transparent;
+	background: #00398F;
 	border: solid 	1px black;
+	border-radius: 5px;
 	font-family: 'Lexend Zetta';
+	/*transition: all 0.3ms ease;*/
 }
+
+.email a{
+	text-decoration: none;
+	color: white;
+}
+
 .footer h2{
 	position: absolute;
-	top: 25px;
+	top: 35px;
 	left: 992px;
 	color: black;
 	font-family: 'Lexend Zetta';
@@ -323,7 +356,7 @@ body{
 	left: 85px;
 	background: transparent;
 	border-top: black;
-	border: solid 1px black;
+	border: solid 0.5px black;
 	position: absolute;
 	width: 1250px;
 }
@@ -338,9 +371,14 @@ body{
 	padding-bottom: 10px;
 }
 
+.footer h4 a{
+	text-decoration: none;
+	color: black;
+}
+
 .footer h5{
 	position: absolute;
-	top: 8px;
+	top: 25px;
 	left: 750px;
 	color: black;
 	font-family: 'Lexend Zetta';
@@ -351,11 +389,16 @@ body{
 
 .footer h6{
 	position: absolute;
-	top: 75px;
+	top: 85px;
 	left: 750px;
 	color: black;
 	font-size: 15px;
 	font-weight: lighter;
 	padding-bottom: 10px;
 	text-align: left;
+}
+
+.footer h6 a{
+	text-decoration: none;
+	color: black;
 }
