@@ -1,0 +1,63 @@
+*{box-sizing: border-box;}
+
+body {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    background-image:url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a4397b97150877.5ebe6fa29bb3f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+    
+    /* https://coder-coder.com/background-image-opacity/#:~:text=This%20is%20accomplished%20by%20setting,the%20alpha%20or%20transparency%20setting. */
+}
+
+h1 {
+    margin-left: 30%;
+    margin-top: 20%;
+    margin-bottom: 0%;
+
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+
+    color: #000000;
+}
+
+h2 {
+    margin-left: 30%;
+    width: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    
+
+    color: #000000;
+
+}
+
+p.AboutUs {
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.MyProfile {
+    margin-left: 30%;
+    margin-top: 7%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.ContactUs {
+    margin-left: 30%;
+    margin-top: 7%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p:hover{
+    text-decoration: underline;
+}

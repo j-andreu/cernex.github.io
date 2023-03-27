@@ -1,0 +1,29 @@
+.name {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 100%;
+    font-size: 100px;
+}
+
+.slogan {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 37.5%;
+    width: 100%;
+    font-size: 25px;
+}
+
+.log-in {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 37.5%;
+    font-size: 25px;
+}
+
+
+
+
