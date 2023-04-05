@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 25%;
-    
+
     /* https://coder-coder.com/background-image-opacity/#:~:text=This%20is%20accomplished%20by%20setting,the%20alpha%20or%20transparency%20setting. */
 }
 
@@ -34,7 +34,7 @@ h2 {
     font-style: italic;
     font-weight: 400;
     font-size: 22px;
-    
+
 
     color: #000000;
 
@@ -57,6 +57,7 @@ p.ContactUs {
     margin-top: 7%;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 p:hover{
     text-decoration: underline;

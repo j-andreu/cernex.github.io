@@ -9,26 +9,25 @@
 </head>
 <body>
 	<section class="home">
-		<div class="cover">
-			<div class="navbar">
-				<a href="#">ARTHRO</a>
-				<div class="logo">
-					<img src="img/Metamasklogo.png" width="60px" height="60px"></div>
-			</div>
-				<div class="content">
-					<button class="btn_verify"> Verify </button>
-					<!--<p class="verify">* Verify your certificate when needed by generating<br>your hash using your personal information </p>-->
-					<!--<button	class="back_btn">BACK</button>-->
-					<div class="imagen">
+            <nav class="navbar">
+                <a class="arthro" href="../Inicio/inicio.html">ARTHRO</a>
+                <ul class="nav_links">
+                    <li> <a href="#"> About Us </a> </li>
+                    <li> <a href="#" class="my_profile"> My Profile </a> </li>
+                    <li> <a href="#"> <img src="img/Metamasklogo.png" width="60px" height="60px"> </a></li>
+                 </ul>
+			</nav>
+				<div class="content_1">
+					<a href="#modal" class="btn_verify"> Verify </a>
+				 	<div class="imagen_producto">
 						<img src="img/rolex.png" width="300px" height="540px"></div>
-
-						<div class="bckground">
-								<h1>ROLEX SUBMARINER</h1>
-								<h2>ROLEX SUBMARINER WDUI3ER363GD3RGF28</h2>
-						</div >
+					<div class="name_product">
+							<h1>ROLEX SUBMARINER</h1>
+							<h2>ROLEX SUBMARINER 124213LV</h2>
+					</div >
 
 						<div class="link_details">
-							<button class="btn2"> <a href="#info_details">Details</a> </button>
+							<button class="btn_details"> <a href="#info_details">Details</a> </button>
 								<div class="info_details">
 									MÓNTRE Nº <br>
 									SERIAL Nº <br>
@@ -52,7 +51,7 @@
 						</div>
 
 						<div class="link_token">
-							<button class="btn3">Token</button>
+							<button class="btn_token">Token</button>
 								<div class="info_token">
 									ID TOKEN <br>
 									RED <br>
@@ -66,17 +65,17 @@
 									Rolex
 								</div>
 						</div>
-				</div>
+<!-- ////////////////////////#FOOTER//////////////////////// -->
 						<div class="footer">
 							<h1> Don't miss any news! </h1>
 							<input type="email" name="email" placeholder="Enter Your Email">
-							<button class="email"><a href="#">Submit</a></button>
+							<button class="email">Submit</button>
 							<h2> Contact Us</h2>
 							<h3> arthrosupport@gmail.com <br><br>
 								 +00 000 000 000
 							</h3>
 							<h5> Artrho </h5>
-							<h6> <a href="#"> About Us<br><br> </a>
+							<h6> <a href="#"> Settings<br><br> </a>
 								 <a href="#"> Brands<br><br> </a>
 								 <a href="#"> Careers </a>
 							</h6>
@@ -85,7 +84,34 @@
 								© Arthro, Inc. All rights reserved.  &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Terms</a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Privacy policy</a>
 							</h4>
 						</div>
-		</div>
+					</div>
+<!-- ////////////////////////#POPUP//////////////////////// -->
+						<div class="container-all" id="modal">
+
+							<div class="popup">
+									<div class="tittle">
+										<h1>Certificate Validation</h1>
+										<p>To protect your personal information we use an unidirectional encryption method called “hashing”. <br>
+											To verify that your hash certifcate and your product fill in with the correct information.</p>
+									</div>
+									<div class="box"></div>
+									<div class="content_verify">
+										<form action="">
+											<label class="key" for="pskey">Personal Security Key</label>
+											<input class="p_key" type="text" name="pskey"><br>
+										</form>
+										<div class="personal_information">
+											<h2></h2>
+										</div>
+									</div>
+									<button class="verify" type="submit">VERIFY</button>
+									<div class="link_info">
+										<button class="info_1"> ? </button>
+										<p class="info_1_1">Una explicación de la llve.</p>
+									</div>
+									<a href="#" class="close_btn">X</a>
+							</div>
+						</div>
 	</section>
 </body>
 </html>
