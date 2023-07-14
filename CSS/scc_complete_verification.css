@@ -1,0 +1,262 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.home{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.container-all{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 600ms;
+}
+
+.container-all:target{
+	background: rgb(0, 0, 0, 0.5);
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup{
+	width: 100%;
+	max-width: 900px;
+	height: 550px;
+	position: relative;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	background: white;
+	border-radius: 5px;
+	border: solid 1px black;
+	transform: translate(-50%, -50%);
+}
+
+.content{
+	position: relative;
+	width: 100%;
+}
+
+.box{
+	position: absolute;
+	border: solid 1px black;
+	width: 825px;
+	height: 375px;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+}
+
+.tittle h1{
+	position: absolute;
+	top: 16px;
+	left: 200px;
+	width: 100%;
+	font-size: 35px;
+	letter-spacing: 1px;
+
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.tittle p{
+	position: absolute;
+	width: 100%;
+	left: 5px;
+	top: 15%;
+	font-size: 20px;
+
+	color: #00801C;
+	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
+	font-style: oblique;
+	text-align: center;
+}
+
+.content h1{
+	position: absolute;
+	top: 165px;
+	left: 50px;
+	width: 800px;
+
+	font-size: 25px;
+	letter-spacing: 2px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	text-align: center;
+}
+
+.content h2{
+	position: absolute;
+	top: 225px;
+	left: 50px;
+	width: 800px;
+
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.content h3{
+	position: absolute;
+	top: 265px;
+	left: 115px;
+	width: 650px;
+
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.content a{
+	position: absolute;
+	top: 315px;
+	left: 345px;
+
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	text-align: center;
+	color: black;
+}
+
+.content p{
+	position: absolute;
+	top: 342px;
+	left: 305px;
+
+	font-size: 25px;
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+	color: #00398F;
+}
+
+.complete_verification{
+	position: absolute;
+	top: 430px;
+	left: 281px;
+	width: 310px;
+	height: 50px;
+
+	background-color: #00398F;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.close_btn{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	background-color: grey;
+	left: 890px;
+	top: -15px;
+	border: solid 1px black;
+	border-radius: 50%;
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.container{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 600ms;
+}
+
+.container:target{
+	background: rgb(0, 0, 0, 0.5);
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup_2{
+	width: 100%;
+	max-width: 500px;
+	height: 200px;
+	position: relative;
+	display: flex;
+	top: 400px;
+	left: 50%;
+	background: white;
+	border-radius: 5px;
+	border: solid 1px black;
+	transform: translate(-50%, -50%);
+}
+
+.box_2{
+	position: absolute;
+	border: solid 1px black;
+	width: 440px;
+	height: 140px;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tittle_2 h1{
+	position: absolute;
+	top: 50px;
+	left: 75px;
+	width: 100%;
+	font-size: 25px;
+	letter-spacing: 1px;
+
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.tittle_2 p{
+	position: absolute;
+	width: 100%;
+	left: 5px;
+	top: 95px;
+	font-size: 20px;
+
+	color: black;
+	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
+	font-style: oblique;
+	text-align: center;
+}
+
+.close{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	background-color: grey;
+	left: 490px;
+	top: -15px;
+	border: solid 1px black;
+	border-radius: 50%;
+}
+
