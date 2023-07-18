@@ -1,0 +1,170 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.home{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*////////////////////////POPUP/////////////////////////*/
+
+.container-all{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 600ms;
+}
+
+.container-all:target{
+	background: rgb(0, 0, 0, 0.5);
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup{
+	width: 100%;
+	max-width: 900px;
+	height: 350px;
+	position: relative;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	background: white;
+	border-radius: 5px;
+	border: solid 1px black;
+	transform: translate(-50%, -50%);
+}
+
+.tittle h1{
+	position: absolute;
+	top: 15px;
+	left: 270px;
+	width: 100%;
+	font-size: 35px;
+	letter-spacing: 1px;
+	font-family: "Poppins", sans-serif;
+
+}
+
+.tittle p{
+	position: absolute;
+	width: 100%;
+	left: -5px;
+	top: 23%;
+	font-size: 16px;
+	font-style: oblique;
+	text-align: center;
+	font-weight: lighter;
+	font-family: "Poppins", sans-serif;
+}
+
+.content_verify{
+	position: relative;
+	width: 100%;
+}
+
+.key{
+	position: absolute;
+	width: 100%;
+	top: 170px;
+	left: 130%;
+	transform: translate(-100%);
+
+
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-family: "Poppins", sans-serif;
+}
+
+.p_key{
+	position: absolute;
+	width: 350px;
+	height: 40px;
+	top: 225px;
+	left: 67%;
+	font-size: 20px;
+	text-align: center;
+	transform: translate(-100%);
+}
+
+.verify{
+	position: absolute;
+	height: 45px;
+	top: 225px;
+	left: 605px;
+	color: white;
+	background: #00398F;
+	border: none;
+	border-radius: 5px;
+}
+
+.box{
+	position: absolute;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 800px;
+	height: 150px;
+	left: 50%;
+	top: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.close_btn{
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	right: -20px;
+	top: -20px;
+	padding: 15px;
+	box-sizing: border-box;
+
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 50px;
+	border: solid black 1px;
+	background: rgb(231, 231, 231);
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+
+.info_1{
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 600px;
+	top: 165px;
+	border: solid 1px black;
+	border-radius: 50px;
+}
+
+.info_1_1{
+	position: absolute;
+	width: 225px;
+	height: 50px;
+	left: 625px;
+	top: 150px;
+	padding: 5px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	border: solid 1px black;
+	background: rgb(231, 231, 231);
+	border-radius: 15px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	text-align: left;
+	display: none;
+}
+
+.link_info:hover .info_1_1{
+	display: block;
+}

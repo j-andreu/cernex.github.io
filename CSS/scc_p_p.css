@@ -341,7 +341,7 @@ table {
 .popup{
 	width: 100%;
 	max-width: 900px;
-	height: 400px;
+	height: 350px;
 	position: relative;
 	display: flex;
 	top: 50%;
@@ -354,7 +354,7 @@ table {
 
 .tittle h1{
 	position: absolute;
-	top: 25px;
+	top: 15px;
 	left: 270px;
 	width: 100%;
 	font-size: 35px;
@@ -367,7 +367,7 @@ table {
 	position: absolute;
 	width: 100%;
 	left: -5px;
-	top: 25%;
+	top: 23%;
 	font-size: 16px;
 	font-style: oblique;
 	text-align: center;
@@ -383,7 +383,7 @@ table {
 .key{
 	position: absolute;
 	width: 100%;
-	top: 215px;
+	top: 170px;
 	left: 130%;
 	transform: translate(-100%);
 
@@ -397,7 +397,7 @@ table {
 	position: absolute;
 	width: 350px;
 	height: 40px;
-	top: 285px;
+	top: 225px;
 	left: 67%;
 	font-size: 20px;
 	text-align: center;
@@ -407,8 +407,11 @@ table {
 .verify{
 	position: absolute;
 	height: 45px;
-	top: 285px;
-	left: 610px;
+	top: 225px;
+	left: 605px;
+
+	text-decoration: none;
+	text-align: center;
 	color: white;
 	background: #00398F;
 	border: none;
@@ -420,9 +423,9 @@ table {
 	border: solid 1px black;
 	border-radius: 5px;
 	width: 800px;
-	height: 175px;
+	height: 150px;
 	left: 50%;
-	top: 70%;
+	top: 65%;
 	transform: translate(-50%, -50%);
 }
 
@@ -452,7 +455,7 @@ table {
 	width: 23px;
 	height: 23px;
 	left: 600px;
-	top: 200px;
+	top: 165px;
 	border: solid 1px black;
 	border-radius: 50px;
 }
@@ -462,7 +465,7 @@ table {
 	width: 225px;
 	height: 50px;
 	left: 625px;
-	top: 125px;
+	top: 150px;
 	padding: 5px;
 	padding-right: 2px;
 	padding-bottom: 1px;

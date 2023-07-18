@@ -27,8 +27,8 @@ body{
 
 .popup{
 	width: 100%;
-	max-width: 900px;
-	height: 550px;
+	max-width: 700px;
+	height: 650px;
 	position: relative;
 	display: flex;
 	top: 50%;
@@ -47,132 +47,156 @@ body{
 .box{
 	position: absolute;
 	border: solid 1px black;
-	width: 825px;
-	height: 375px;
+	border-radius: 5px;
+	width: 600px;
+	height: 450px;
 	left: 50%;
-	top: 60%;
+	top: 58%;
 	transform: translate(-50%, -50%);
 }
 
 .tittle h1{
 	position: absolute;
-	top: 16px;
+	top: 10px;
 	left: 200px;
 	width: 100%;
 	font-size: 35px;
 	letter-spacing: 1px;
 
 	font-family: "Poppins", sans-serif;
-	font-weight: bold;
+	font-weight: normal;
 	letter-spacing: 2px;
 }
 
 .tittle p{
 	position: absolute;
-	width: 100%;
-	left: 5px;
-	top: 15%;
-	font-size: 20px;
+	width: 500px;
+	left: 100px;
+	top: 12%;
+	font-size: 16px;
 
-	color: #00801C;
 	font-family: "Poppins", sans-serif;
 	font-weight: lighter;
 	font-style: oblique;
 	text-align: center;
 }
 
-.content h1{
-	position: absolute;
-	top: 165px;
-	left: 50px;
-	width: 800px;
 
-	font-size: 25px;
+.name_hash{
+	position: absolute;
+	width: 150px;
+	height: 58px;
+	left: 150px;
+	top: 170px;
+
+	font-size: 20px;
 	letter-spacing: 2px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	text-align: center;
-}
-
-.content h2{
-	position: absolute;
-	top: 225px;
-	left: 50px;
-	width: 800px;
-
-	font-size: 20px;
-	font-family: "Poppins", sans-serif;
-	font-weight: lighter;
-	text-align: center;
-}
-
-.content h3{
-	position: absolute;
-	top: 265px;
-	left: 115px;
-	width: 650px;
-
-	font-size: 20px;
-	font-family: "Poppins", sans-serif;
-	font-weight: lighter;
-	text-align: center;
-}
-
-.content a{
-	position: absolute;
-	top: 315px;
-	left: 345px;
-
-	font-size: 20px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	text-align: center;
-	color: black;
-}
-
-.content p{
-	position: absolute;
-	top: 342px;
-	left: 305px;
-
-	font-size: 25px;
 	font-family: "Poppins", sans-serif;
 	font-weight: normal;
-	color: #00398F;
 }
 
-.complete_verification{
+.name_hash_n{
 	position: absolute;
-	top: 430px;
-	left: 281px;
-	width: 310px;
-	height: 40px;
+	width: 400px;
+	height: 55px;
+	left: 150px;
+	top: 197px;
 
-	background-color: #00398F;
-	text-decoration: none;
-	text-align: center;
-	padding-top: 10px;
+	background: rgb(219, 219, 219);
 	border: none;
 	border-radius: 5px;
-	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.surname_hash{
+	position: absolute;
+	width: 113px;
+	height: 53px;
+	left: 150px;
+	top: 280px;
+
 	font-size: 20px;
 	letter-spacing: 2px;
-	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+}
+
+.surname_hash_n{
+	position: absolute;
+	width: 400px;
+	height: 55px;
+	left: 150px;
+	top: 307px;
+
+	background: rgb(219, 219, 219);
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.n_serie_hash{
+	position: absolute;
+	width: 113px;
+	height: 53px;
+	left: 150px;
+	top: 400px;
+
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+}
+
+.n_serie_hash_n{
+	position: absolute;
+	width: 400px;
+	height: 55px;
+	left: 150px;
+	top: 427px;
+
+	background: rgb(219, 219, 219);
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.validate{
+	position: absolute;
+	left: 205px;
+	top: 525px;
+	width: 300px;
+	height: 45px;
+
+	border: none;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500;
+	color: whitesmoke;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background: #00398F;
+
 }
 
 .close_btn{
 	position: absolute;
-	width: 25px;
-	height: 25px;
+	width: 5px;
+	height: 5px;
+	right: -20px;
+	top: -20px;
+	padding: 15px;
 
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	font-family: "Poppins", sans-serif;
 	font-size: 15px;
-	background-color: grey;
-	left: 890px;
-	top: -15px;
-	border: solid 1px black;
-	border-radius: 50%;
+	font-weight: bold;
+	border-radius: 50px;
+	border: solid black 1px;
+	background: rgb(231, 231, 231);
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
 }
