@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  position: relative;
+  float: left;
+  border-right: solid 1px black;
+  padding: 30px 5px;
+  height: 313.002px;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background: none;
+  color: rgba(23, 20, 18, 0.50);
+  padding: 10px 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: none;
+  color: black;
+  font-weight: bold;
+  border-right: solid 3px black
+}
+
+/* Style the tab content */
+.tabcontent {
+  	float: left;
+  	padding: 0px 20px;
+  	height: 300px;
+
+  	color: var(--Blue, #2B4570);
+
+/* Display - Titulo/48/Semibold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 160%; /* 64px */
+	letter-spacing: 1.2px;
+}
+
+.tabcontent p{
+  width: 530px;
+  color: var(--Black, #171412);
+
+  /* Heading - Subtitulo/20/Regular */
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: 1.8px;
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, '01')" id="defaultOpen">01</button>
+  <button class="tablinks" onclick="openCity(event, '02')">02</button>
+  <button class="tablinks" onclick="openCity(event, '03')">03</button>
+  <button class="tablinks" onclick="openCity(event, '04')">04</button>
+
+</div>
+
+<div id="01" class="tabcontent">
+  <h3>SIGN A CONTRACT <br> WITH CERNEX</h3>
+  <p>After getting in touch with our team, we will start the process of conditionsand personal strategie to optimize the brand.</p>
+</div>
+
+<div id="02" class="tabcontent">
+  <h3>SOFTWARE AND TOOLS<br> IMPLEMENTATION</h3>
+  <p>Cernex is used for customers but designed for brands, and that’s why is accessible and easy-to-implement. Our team will be in charge of the whole implementation and tutorials of use.</p>
+</div>
+
+<div id="03" class="tabcontent">
+  <h3>REGISTER DATA FROM <br> THE COSTUMERS</h3>
+  <p>Collect key aspects of your customers and let us do the rest. Identities will remain private as we don’t need them to prove ownership.</p>
+</div>
+
+<div id="04" class="tabcontent">
+  <h3>INCREASE YOUR INCOME AND <br> PROTECT YOUR BRAND</h3>
+  <p>Customers will receive their certificate by the time they receive their products. We will focus on the products and customers protection and support so you can focus on growing your brand with Cernex. Make it happen.</p>
+</div>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html>

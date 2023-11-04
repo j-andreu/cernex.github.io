@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            display: none;
+        }
+
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="faq-question">1. What is Lorem Ipsum?</div>
+            <div class="faq-answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">2. How can I contact support?</div>
+            <div class="faq-answer">You can contact our support team by emailing support@example.com.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">3. Do you offer refunds?</div>
+            <div class="faq-answer">Yes, we offer refunds within 30 days of your purchase.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">4. What payment methods do you accept?</div>
+            <div class="faq-answer">We accept Visa, MasterCard, PayPal, and other major credit cards.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">5. Is my data secure?</div>
+            <div class="faq-answer">Yes, we take security seriously and use encryption to protect your data.</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle FAQ answers and hide other answers
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach((question) => {
+            question.addEventListener('click', () => {
+                faqQuestions.forEach((q) => {
+                    if (q !== question) {
+                        q.classList.remove('active');
+                    }
+                });
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
