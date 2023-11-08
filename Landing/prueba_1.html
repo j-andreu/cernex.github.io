@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.landing_section6{
+	display: flex;
+	width: 100%;
+	height: 85vh;
+	flex-direction: column;
+	background:linear-gradient(180deg, #212B3F 0%, #2B4570 100%);
+}
+
+.tittle_faq{
+	display: flex;
+	/*justify-content: flex-start;
+	align-items: baseline;
+	width: max-content;*/
+	padding: 0px 0px 0px 100px;
+	margin-bottom: 34.80px;
+	color: var(--White, #eff7ff);
+
+	/* Display - Titulo/48/Bold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 140%; /* 58.8px */
+	letter-spacing: 1.26px;
+}
+
+.faq-container {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 20px;
+	background: none;
+	color: #FFFDFE;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.faq-item {
+	margin-bottom: 20px;
+	border-bottom: solid 0.5px #f9f9f96b;
+}
+
+.faq-question {
+	margin-bottom: 10px;
+
+	color: var(--White, #FFFDFE);
+
+	/* Heading - Subtitulo/20/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 1px;
+
+	cursor: pointer;
+}
+
+.faq-question.active {
+	margin-bottom: 10px;
+
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.faq-answer {
+	display: none;
+	margin-bottom: 10px;
+	margin-left: 21px;
+
+	color: var(--White, #FFFDFE);
+
+	/* Body/16/Regular */
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 175%; /* 28px */
+}
+
+.faq-question.active + .faq-answer {
+	display: block;
+}
+</style>
+<body>
+	<section class="landing_section6">
+		<p class="tittle_faq">FAQ</p>
+		<div class="landing_line5"></div>
+
+		<div class="faq-container">
+			<div class="faq-item">
+				<div class="faq-question">Proof of OWNERSHIP</div>
+				<div class="faq-answer">
+					<p>Cernex advanced encryption methods keep <br>
+					<span style="font-weight: 700; color: #fffdfe;">costumers identities private</span> , and a validation <br>
+						feature ensures that only true owners can claim <br>
+							the ownership of their product.</p>
+					<p class="landing_content_data">DATA ENCRYPTION <BR>
+						OWNER-ONLY VALIDATION<BR>
+							INSTANT VALIDATION</p>
+					<img class="proof_img" src="./img/proof_ownership.svg" alt="" width="400px">
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<div class="faq-question">Product AUTHENTICATION</div>
+				<div class="faq-answer">
+					<p>Each product is connected to a unique Digital <br>
+						Product Passport through their <span style="font-weight: 700; color: #fffdfe;">serial number</span>. <br>
+							The brand issues each certificate ensuring their <br>
+								<span style="font-weight: 700; color: #fffdfe;">legitmacy.</span> </p>
+					<p class="landing_content_data">CERTIFICATE UNIWNESS <BR>
+						SERIAL NUMBER VALIDATION<BR>
+							1 PRODUCT = 1 CERTIFICATE</p>
+					<img class="proof_auth" src="./img/authenticity_img.svg" alt="" width="350px">
+				</div>
+			</div>
+
+			<div class="faq-item">
+				<div class="faq-question">Data STORAGE</div>
+				<div class="faq-answer">
+					<p class="tittle_3">Data TRACEABILITY</p>
+						<p>The data stored in each Digital Product Passport, <br>
+							reinforce the credibility of the brands and their <br>
+								products, thereby providing value, <span style="font-weight:700; color:#fffdfe;">transparency.</span>and <br>
+									<span style="font-weight:700; color: #fffdfe;">protection.</span>.</p>
+						<img class="traceability_img" src="./img/traceability_img.svg" alt="" width="350px"></div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">Global SECURITY</div>
+				<div class="faq-answer"> <p class="tittle_3">Global SECURITY</p>
+					<p>Cernex <span style="font-weight: 700; color:#fffdfe;">layers of security</span> prevents hacks and<br>
+						vulnerabilities while making sure only <span style="font-weight: 700; color:#fffdfe;">rightful owners</span><br>
+							can prove authenticity and ownership of a product and<br>
+								own their specific Digital Product Passport.</p>
+					<img class="security_img" src="./img/security_img.svg" alt="" width="350px">
+				</div>
+			</div>
+		</div>
+</section>
+	<script>// JavaScript to toggle FAQ answers and hide other answers
+	const faqQuestions = document.querySelectorAll('.faq-question');
+
+	faqQuestions.forEach((question) => {
+		question.addEventListener('click', () => {
+			faqQuestions.forEach((q) => {
+				if (q !== question) {
+				q.classList.remove('active');
+			}
+		});
+	question.classList.toggle('active');
+	});
+	});</script>
+</body>
+
+</html>

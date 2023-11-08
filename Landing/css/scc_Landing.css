@@ -1,0 +1,1467 @@
+body{
+	position: relative;
+	margin: 0px;
+	min-height: 100vh;
+}
+
+.landing_home{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 229.031px;
+}
+
+/*- - - - - - - - -	NAVBAR	- - - - - - - - -*/
+
+.landing_navbar{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 85px;
+	justify-content: space-between;
+	padding: 20px;
+
+	box-sizing: border-box;
+	background-color: #2B4570;
+}
+
+.landing_navbar .header_logo{
+	position: relative;
+	width: 250px;
+	height: 50px;
+	right: 35px;
+
+}
+
+.landing_navbar .header_btn{
+	position: relative;
+	width: 124px;
+	height: 41px;
+
+	color: #E94981;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 175%; /* 28px */
+
+	border-radius: 30px;
+	background: #fffdfe;
+	border: 1px solid var(--White, #FFFDFE);
+	cursor: pointer;
+}
+
+.landing_navbar .header_btn:hover{
+	background: none;
+	border: 1px solid #E94981;
+	color: #E94981;
+}
+
+/*- - - - - - - - -	SECTION 1	- - - - - - - - -*/
+
+.landing_section1{
+	display: flex;
+	width: 100%;
+	padding-top: 85px;
+	height: 100vh;
+
+	background: linear-gradient(180deg, #2B4570 3.88%, #2B4570 9.75%, #263D65 19.09%, #1D232F 46.16%, #101010 99.9%);
+}
+
+.wrap_section1 h1{
+	position: absolute;
+	width: 550px;
+	left: 10%;
+	top: 150px;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+
+
+	color: var(--White, #FFFDFE);
+
+	/* Display - Titulo/48/Semibold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 160%; /* 64px */
+	letter-spacing: 1.2px;
+}
+
+.wrap_section1 .section1_p{
+	position: absolute;
+	width: 576px;
+	height: 116px;
+	top: 400px;
+	left: 10%;
+	margin-top: 50px;
+	flex-shrink: 0;
+
+	color: var(--White, #FFFDFE);
+
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 175%; /* 28px */
+	letter-spacing: 1.6px;
+}
+
+.mac_product{
+	position: relative;
+	left: 85%;
+	top: -11%;
+}
+
+.mobile_certificate{
+	position: relative;
+	left: 45%;
+	top: 14%;
+	opacity: 0;
+	animation: aparecer 1s /*Tiempo de aparición*/ ease-in-out 3s /* Tiempo sin imagen*/ forwards;
+}
+
+@keyframes aparecer {
+	to{
+		opacity: 1; /* La imagen se vuelve completamente visible al final de la animación */
+	}
+}
+
+.wrap_section1 .section1_btn{
+	position: absolute;
+	width: 213px;
+	height: 41px;
+	top: 600px;
+	left: 20%;
+	flex-shrink: 0;
+
+	color: #E94981;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 175%; /* 28px */
+	letter-spacing: 1px;
+
+	border-radius: 30px;
+	border: 1px solid var(--White, #FFFDFE);
+	background: #fffdfe;
+	cursor: pointer;
+}
+
+.wrap_section1 .section1_btn:hover{
+	color: #E94981;
+	background: none;
+	border: 1px solid #E94981;
+}
+
+/*- - - - - - - - -	SECTION 2	- - - - - - - - -*/
+
+.landing_section2{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+	background: #101010;
+}
+
+.wrap_section2 {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 1292px;
+	height: 425px;
+
+	border-radius: 7px;
+	padding: 10px;
+
+
+	background: linear-gradient(154deg, rgba(16, 16, 16, 0.62) -23.03%, rgba(43, 69, 112, 0.62) 185.08%);
+}
+
+.tittle_2{
+	display: flex;
+	position: relative;
+	top: -105px;
+	left: 25px;
+	align-self: flex-start;
+
+	color: #D9D9D9;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.data{
+	display: flex;
+}
+
+.data1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 25%;
+}
+
+.data2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 25%;
+}
+
+.data3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 25%;
+}
+
+.data4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 25%;
+}
+
+p{
+	margin: 0px;
+}
+
+.figures{
+	color: var(--Pink, #E94981);
+	font-family: 'Poppins', sans-serif;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%; /* 39px */
+}
+
+.text{
+	color: var(--White, #FFFDFE);
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 30px */
+}
+
+
+/*- - - - - - - - -	SECTION 3	- - - - - - - - -*/
+
+.landing_section3{
+	display: flex;
+	width: 100%;
+	background: #101010;
+}
+
+.wrap_section3{
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing_tittle3{
+	width: 90%;
+	padding: 150px 0px 0 100px;
+	color: var(--White, #FFFDFE);
+
+	/* Display - Titulo/48/Bold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 140%; /* 58.8px */
+	letter-spacing: 1.26px;
+}
+
+.landing_line3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 85%;
+	height: 1.5px;
+	background-color: #FFFDFE;
+}
+
+.landing_subt3{
+	width: 85%;
+	display: flex;
+	margin-top: 1%;
+	justify-content: flex-end;
+
+	color: #fffdff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.tittle_3{
+	display: flex;
+	text-align: left;
+	width: 100%;
+	justify-content: left;
+	padding-bottom: 3%;
+
+	color: white;
+}
+.tabcontent {
+	display: flex;
+	width: 80%;
+	height: 312px;
+	overflow: hidden;
+	flex-direction: column;
+	margin: 5% 10% 5% 10%;
+	padding: 5% 3% 5% 3%;
+
+	border-top: none;
+	text-align: justify;
+
+	color: var(--Grey, #D9D9D9);
+
+	/* Body/16/Regular */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	letter-spacing: 1px;
+	font-weight: 400;
+	line-height: 175%; /* 28px */
+}
+
+.tabcontent_box {
+	display: flex;
+	width: 80%;
+	height: 312px;
+	overflow: hidden;
+	flex-direction: column;
+	margin: 5% 10% 5% 10%;
+	padding: 5% 3% 5% 3%;
+
+	border-radius: 15px;
+	background: rgba(51, 51, 51, 0.50);
+	text-align: justify;
+
+	color: var(--Grey, #D9D9D9);
+
+	/* Body/16/Regular */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	letter-spacing: 1px;
+	font-weight: 400;
+	line-height: 175%; /* 28px */
+}
+
+.landing_content_data{
+	margin-top: 10px;
+	color: var(--White, #FFFDFE);
+
+	/* Body/16/Semibold */
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+.proof_img{
+	position: relative;
+	left: 50%;
+	top: -95%;
+}
+
+.proof_auth{
+	position: relative;
+	left: 50%;
+	top: -120%;
+	transition: transform 1s ease-in-out;
+}
+
+.proof_auth:hover{
+	transform: scale(2);
+	transform-origin: 60% 98%;
+}
+
+.traceability_img{
+	position: relative;
+	left: 50%;
+	top: -20%;
+}
+
+.security_img{
+	position: relative;
+	left: 55%;
+	top: -49%;
+}
+
+.section3_btn{
+	position: relative;
+	top: -20px;
+	left: 0%;
+	width: 175px;
+	height: 41px;
+
+
+	color: #E94981;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 175%; /* 28px */
+
+	border-radius: 30px;
+	background: #f9f9f9;
+	cursor: pointer;
+}
+
+.section3_btn:hover{
+	border: 2px solid#E94981;
+	background: none;
+	color: #E94981;
+}
+
+/*- - - - - - - - -	SECTION 4	- - - - - - - - -*/
+
+.landing_section4{
+	display: flex;
+	width: 100%;
+	height: 125vh;
+	background: #101010;
+}
+
+.landing_tittle4{
+	padding: 150px 0px 0 100px;
+	color: var(--White, #eff7ff);
+
+	/* Display - Titulo/48/Bold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 140%; /* 58.8px */
+	letter-spacing: 1.26px;
+}
+
+.landing_line4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 110%;
+	height: 1.5px;
+	background-color: #FFFDFE;
+}
+
+.landing_subt4{
+	display: flex;
+	margin-top: 15px;
+	width: 110%;
+	justify-content: flex-end;
+
+	color: #fffdff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+		/***********STEP 1***********/
+
+.landing_steps1{
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 200px;
+	padding-top: 100px;
+}
+
+.landing_steps1 .number_steps{
+	height: 155px;
+	padding-right: 15px;
+	border-right: solid 1.5px #FFFDFE;
+	color: var(--White, #FFFDFE);
+	text-align: center;
+
+	/* Heading - Subtitulo/20/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 2px;
+}
+
+.info_steps1{
+	display: flex;
+	flex-direction: column;
+	padding-right: 15px;
+}
+
+.landing_steps1 .tittle_steps{
+	width: 350px;
+	color: var(--Pink, #E94981);
+	text-align: center;
+
+	/* Heading - Subtitulo/20/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 2px;
+}
+
+.landing_text4{
+    width: 540px;
+    position: relative;
+    left: 17px;
+	color: #FFFDFE;
+	text-align: justify;
+
+	/* Body/16/Regular */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 175%; /* 28px */
+	letter-spacing: 0.5px;
+}
+
+		/***********STEP 2***********/
+
+.landing_steps2{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 25px;
+}
+
+.landing_steps2 .number_steps{
+	height: 155px;
+	padding-right: 15px;
+
+	border-right: solid 1.5px #FFFDFE;
+	color: var(--White, #FFFDFE);
+	text-align: center;
+
+	/* Heading - Subtitulo/20/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 2px;
+}
+.landing_steps2 .tittle_steps{
+	width: 0px;
+	padding-left: 15px;
+	color: var(--Pink, #E94981);
+	text-align: center;
+
+	/* Heading - Subtitulo/20/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 2px;
+}
+
+/*- - - - - - - - -	SECTION 5	- - - - - - - - -*/
+
+.landing_section5{
+	display: flex;
+	width: 100%;
+	height: 75vh;
+	flex-direction: column;
+	padding-top: 7%;
+
+	background: linear-gradient(180deg, #101010 5.35%, #222C40 102.32%);
+}
+
+.landing_tittle5{
+	padding: 0px 0px 0 100px;
+	margin-bottom: 34.80px;
+
+	color: var(--White, #eff7ff);
+
+	/* Display - Titulo/48/Bold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 140%; /* 58.8px */
+	letter-spacing: 1.26px;
+}
+
+.landing_line5{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1286px;
+	height: 1.5px;
+	background-color: #FFFDFE;
+}
+
+.landing_subt5{
+	display: flex;
+	margin-top: 15px;
+	width: 164.5vh;
+	justify-content: flex-end;
+
+	color: #fffdff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+form{
+	position: relative;
+	top: 80px;
+	left: 50%;
+	transform: translate(-40%, 0%);
+
+	width: 1100px;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form-column{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	width: 505px;
+}
+
+input{
+	height: 40px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border: 0.5px solid #FFFDFE;
+	background: none;
+	border-radius: 15px;
+
+	color: var(--White, #FFFDFE);
+
+	/* Body/16/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 175%; /* 28px */
+}
+
+
+.submit-btn {
+	position: relative;
+	top: 125%;
+	right: 50%;
+	width: 250px;
+	height: 41px;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 30px;
+	border: 5px solid var(--White, #FFFDFE);
+	background: var(--White, #FFFDFE);
+
+	color: var(--Blue, #2B4570);
+
+	/* Heading - Subtitulo/20/Semibold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 2px;
+
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.submit-btn:hover {
+	background: none;
+	border: solid 2px #E94981;
+	color: #E94981;
+}
+
+/*- - - - - - - - - SECTION 6 - - - - - - - - -*/
+
+.landing_section6{
+	display: flex;
+	width: 100%;
+	height: 85vh;
+	flex-direction: column;
+	background:linear-gradient(180deg, #212B3F 0%, #2B4570 100%);
+}
+
+.tittle_faq{
+	display: flex;
+	/*justify-content: flex-start;
+	align-items: baseline;
+	width: max-content;*/
+	padding: 0px 0px 0px 100px;
+	margin-bottom: 34.80px;
+	color: var(--White, #eff7ff);
+
+	/* Display - Titulo/48/Bold */
+	font-family: 'Poppins', sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 140%; /* 58.8px */
+	letter-spacing: 1.26px;
+}
+
+.faq-container {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 20px;
+	background: none;
+	color: #FFFDFE;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.faq-item {
+	margin-bottom: 20px;
+	border-bottom: solid 0.5px #f9f9f96b;
+}
+
+.faq-question {
+	margin-bottom: 10px;
+
+	color: var(--White, #FFFDFE);
+
+	/* Heading - Subtitulo/20/Medium */
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%; /* 32px */
+	letter-spacing: 1px;
+
+	cursor: pointer;
+}
+
+.faq-question.active {
+	margin-bottom: 10px;
+
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.faq-answer {
+	display: none;
+	margin-bottom: 10px;
+	margin-left: 21px;
+
+	color: var(--White, #FFFDFE);
+
+	/* Body/16/Regular */
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 175%; /* 28px */
+}
+
+.faq-question.active + .faq-answer {
+	display: block;
+}
+
+/*- - - - - - - - - SECTION (FOOTER) - - - - - - - - -*/
+
+
+footer {
+	position: absolute;
+	background-color: #2B4570;
+	width: 100%;
+	display: flex;
+	bottom: 0px;
+	align-items: stretch;
+	padding-bottom: 13px;
+}
+
+div.landing_suscribe {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+div.landing_suscribe p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 1.5px;
+    color: #fffdfe;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 9%;
+	padding-bottom: 20px;
+
+}
+
+div.landing_suscribe input {
+    border-radius: 10px;
+    background-color: #fffdfe;
+    width: 338px;
+    height: 20px;
+    border: #2B4570;
+    margin-left: 12%;
+    margin-bottom: 2%;
+}
+
+div.landing_suscribe input[type="text" i] {
+    color: #2B4570;
+    padding-left: 3%;
+}
+
+div.landing_suscribe button {
+    width: 130px;
+    height: 34px;
+    border-radius: 32px;
+    border: 1px solid #E94981;
+    background-color: #E94981;
+    margin-left: 12%;
+
+    color: #fffdfe;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    /* 25.2px */
+	cursor: pointer;
+}
+
+div.landing_right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.footer_section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+div.landing_services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+div.landing_services p.landing_title {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_services p.landing_items {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_resources {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+div.landing_resources p.landing_title {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_resources p.landing_items {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_company {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+div.landing_company p.landing_title {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_company p.landing_items {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_followUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+div.landing_followUs p.landing_title {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+div.landing_socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.landing_socialmedia i {
+    color: #fffdfe;
+}
+
+
+div.landing_legal {
+    display: flex;
+    flex-direction: row;
+    align-self: self-end;
+    width: 100%;
+    margin-right: 2%;
+}
+
+div.landing_legal p {
+	position: relative;
+	width: 100%;
+    margin-right: 2%;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 175%;
+    color: #fffdfe;
+}
+
+
+@media (max-width: 320px) {
+	.landing_home {
+		/* Se mantiene el ancho al 100% para que sea fluido */
+		height: auto; /* Altura automática para ajustarse al contenido */
+		background-size: contain; /* Cambia a contain para asegurarse de que la imagen se ajuste completamente dentro del contenedor */
+		padding-bottom: 0%; /* Ajustar el padding inferior para que sea adecuado para pantallas más pequeñas */
+	  }
+
+	.landing_navbar .header_logo{
+		right: 0%;
+	}
+	.landing_section1 {
+	  /* Adaptar el padding y la altura para dispositivos más pequeños */
+	  padding-top: 20px; /* Menor padding superior */
+	  height: auto; /* Altura automática para adaptarse al contenido */
+	  min-height: 100vh; /* Mínimo de altura de la ventana gráfica */
+	}
+
+	.wrap_section1 h1 {
+	  /* Ajustar el ancho, la posición y el tamaño del texto para pantallas pequeñas */
+	  width: 95%; /* Utilizar más ancho de la pantalla */
+	  left: 5%; /* Centrar horizontalmente */
+	  top: 1.5%; /* Ajustar la posición superior */
+	  font-size: 20px; /* Tamaño de fuente más pequeño */
+	  line-height: 120%; /* Espaciado de línea ajustado */
+	  text-align: left; /* Centrar texto si es necesario */
+	}
+
+	.landing_section1 .section1_p {
+	  /* Cambios en el párrafo para adaptarse a la pantalla */
+	  width: 90%; /* Utilizar más ancho de la pantalla */
+	  left: 5%; /* Centrar respecto al contenedor */
+	  top: 3%; /* Posicionar debajo del título h1 */
+	  font-size: 12px; /* Tamaño de fuente más pequeño */
+	  line-height: 150%; /* Espaciado de línea más ajustado */
+	  text-align: left;
+	  letter-spacing: 0.25px;
+	}
+
+	.mac_product{
+	  /* Es posible que necesites ocultar o reposicionar imágenes que no encajen bien */
+	  display: none; /* Ocultar imágenes que no caben bien */
+	}
+
+	.mobile_certificate{
+		width: 125%;
+		top: 55%;
+		left: -14%;
+	}
+
+	.wrap_section1 .section1_btn {
+	  /* Centrar el botón y ajustar la posición y el tamaño */
+	  width: 60%; /* Ajustar el ancho para pantallas pequeñas */
+	  height: auto; /* Altura automática */
+	  padding: 3%; /* Ajustar el padding para mantener el contenido */
+	  left: 50%; /* Centrar horizontalmente */
+	  top: 5.5%; /* Posición debajo del párrafo */
+	  transform: translateX(-50%); /* Centrar respecto a su posición */
+	  font-size: 14px; /* Tamaño de fuente ajustado */
+	}
+
+	/*- - - - - - - - -	SECTION 2	- - - - - - - - -*/
+
+	.landing_section2 {
+		/* Asegurarse de que la sección ocupe al menos la mitad de la altura de la pantalla */
+		height: 100%;
+		/* Asegurarse de que el contenido esté centrado y sea visible */
+		justify-content: flex-start;
+	  }
+
+	  .wrap_section2 {
+		/* Ajustar el ancho para que no se desborde de la pantalla */
+		width: 100%;
+		/* Ajustar la altura para que sea automática y se adapte al contenido */
+		height: auto;
+		/* Ajustar el padding para asegurar que el contenido no esté demasiado apretado */
+		padding: 3%;
+		margin: 90% 1% 1% 1%;
+	  }
+
+	.tittle_2{
+		/* Posicionar el título correctamente y asegurarse de que se ajuste al contenedor */
+		position: relative;
+		top: 0;
+		left: 0;
+		align-self: flex-start;
+		font-size: 16px;
+		margin-bottom: 10%;
+	}
+
+	  .data {
+		/* Cambiar el layout de fila a columna para acomodar los elementos verticalmente */
+		flex-direction: column;
+		align-items: center; /* Centrar los elementos */
+	  }
+
+	  .data1,
+	  .data2,
+	  .data3,
+	  .data4 {
+		/* Ajustar el ancho y los márgenes para cada elemento de datos */
+		width: 100%; /* Usar el ancho completo disponible */
+		margin: 5% 0; /* Añadir margen superior e inferior y remover margen lateral */
+	  }
+
+	  .figures {
+		/* Reducir el tamaño de la fuente para las cifras para que encajen en pantallas pequeñas */
+		font-size: 36px;
+		line-height: 140%; /* Ajustar el espaciado de línea */
+	  }
+
+	  .text {
+		/* Reducir el tamaño de la fuente para el texto para que encaje y sea legible */
+		font-size: 16px;
+		line-height: 150%; /* Ajustar el espaciado de línea */
+		padding: 0 15%; /* Añadir padding horizontal */
+	  }
+
+	  /* Ajustar el margen de los párrafos para que el texto no toque los bordes */
+	  p {
+		margin: 1%;
+	  }
+
+	  /*- - - - - - - - -	SECTION 3	- - - - - - - - -*/
+
+	  .landing_section3 {
+		flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+	  }
+
+	.wrap_section3{
+		  width: 100%;
+		  margin-top: 10%;
+	  }
+
+	  .landing_tittle3,
+	  .landing_line3,
+	  .landing_subt3,
+	  .tittle_3,
+	  .tabcontent,
+	  .tabcontent_box,
+	  .landing_content_data,
+	  .section3_btn {
+		width: 100%; /* Ajusta el ancho al 100% del contenedor para elementos flexibles */
+	  }
+
+	  .proof_img,
+	  .proof_auth,
+	  .traceability_img,
+	  .security_img{
+		  margin: 1% auto;
+	  }
+
+	  .landing_tittle3 {
+		font-size: 24px; /* Reduce el tamaño de la fuente */
+		width: 95%;
+		display: flex;
+		padding: 0%;
+	  }
+
+	  .landing_line3,
+	  .landing_subt3 {
+		width: 95%; /* Ajusta el ancho para el contenido interior */
+		margin-top: 3%; /* Añade un margen superior */
+	  }
+
+	  .tittle_3 {
+		padding-bottom: 8%; /* Reduce el padding inferior */
+	  }
+
+	  .tabcontent,
+	  .tabcontent_box {
+		height: 100%;
+		width: 95%;
+		padding: 15% 0% 15% 0%;
+	  }
+
+	  .proof_img,
+	  .proof_auth,
+	  .traceability_img,
+	  .security_img {
+		position: static; /* Remueve la posición relativa */
+		width: 80%; /* Ajusta el ancho de las imágenes */
+		margin: 10px auto; /* Centra las imágenes con márgenes automáticos */
+	  }
+
+	  .proof_auth:hover {
+		transform: none; /* Desactiva la transformación al hacer hover */
+	  }
+
+	  .section3_btn {
+		position: static; /* Remueve la posición relativa */
+		margin: 10% 1% 17% ; /* Centra el botón con márgenes automáticos */
+		width: 75%; /* Permite que el botón se ajuste al contenido */
+	  }
+
+/*- - - - - - - - -	SECTION 4	- - - - - - - - -*/
+
+	  .landing_section4 {
+		/* Se mantiene el ancho al 100% para que sea fluido y se ajusta la altura */
+
+	  }
+
+	  .landing_tittle4 {
+		/* Reducir el padding y ajustar el tamaño de la fuente para el título */
+		padding: 2%; /* Padding reducido */
+		font-size: 24px; /* Tamaño de fuente reducido */
+		line-height: 120%; /* Ajustar el espaciado de línea */
+		letter-spacing: normal; /* Letra espaciado a la configuración predeterminada */
+	  }
+
+	  .landing_line4 {
+		/* Ajustar el ancho de la línea divisora */
+		width: 95%; /* Reducir el ancho */
+		margin: 0 auto; /* Centrar con margen automático */
+	  }
+
+	  .landing_subt4 {
+		/* Ajustar el ancho y la alineación del subtítulo */
+		width: auto; /* Ancho automático */
+		margin-top: 3%; /* Reducir el margen superior */
+		justify-content: center; /* Centrar el contenido */
+		padding: 2%; /* Añadir padding a los lados */
+		font-size: 14px; /* Reducir el tamaño de la fuente */
+	  }
+
+	  .landing_steps1,
+	  .landing_steps2 {
+		/* Cambiar la dirección del flex a columna y ajustar el padding */
+		flex-direction: row;
+		align-items: center; /* Centrar elementos horizontalmente */
+		padding-left: 0; /* Quitar padding izquierdo */
+		padding-top: 10%; /* Padding superior reducido */
+	  }
+
+	  .landing_steps1 .number_steps,
+	  .landing_steps2 .number_steps {
+		/* Ajustar la altura y los estilos de bordes */
+		height: 261px; /* Altura automática */
+		border-right: solid 1.5px #FFFDFE; ; /* Eliminar el borde derecho */
+		padding: 3% 0; /* Ajustar el padding */
+		width: 80%; /* Ajustar el ancho */
+		margin: 0px -15% 1% 0px;	  }
+
+	  .landing_steps1 .tittle_steps,
+	  .landing_steps2 .tittle_steps {
+		/* Ajustar el ancho y el tamaño de la fuente para los títulos de los pasos */
+		width: auto; /* Ancho automático */
+		font-size: 18px; /* Reducir el tamaño de la fuente */
+		text-align: left;
+		padding-left: 36px;
+	  }
+
+	  .landing_text4 {
+		/* Ajustar el ancho y el tamaño de la fuente del texto */
+		width: auto; /* Ancho automático */
+		font-size: 14px; /* Reducir el tamaño de la fuente */
+		padding: 0 20px; /* Añadir padding a los lados */
+		margin-top: 10px; /* Ajustar el margen superior */
+	  }
+
+	  /* Ajustar la alineación y el tamaño de la fuente para los números de los pasos y el texto */
+	  .info_steps1 {
+		padding: 0 20px; /* Añadir padding a los lados */
+	  }
+
+/*- - - - - - - - -	SECTION 5	- - - - - - - - -*/
+
+	  .landing_section5 {
+		/* Mantener el ancho y ajustar la altura y el padding superior */
+		height: auto; /* Altura automática para ajustarse al contenido */
+	  }
+
+	  .landing_tittle5 {
+		/* Ajustar el padding y reducir el tamaño de la fuente */
+		padding: 2%; /* Padding reducido */
+		margin: 2%;
+		width: 95%;
+		font-size: 24px; /* Reducir tamaño de la fuente */
+		line-height: 120%; /* Ajustar el espaciado de línea */
+		letter-spacing: normal; /* Restablecer el espaciado de las letras */
+	  }
+
+	  .landing_line5 {
+		/* Ajustar el ancho para que coincida con el nuevo ancho del contenedor */
+		width: 95%; /* Ajustar el ancho */
+	  }
+
+	  .landing_subt5 {
+		/* Ajustar el ancho y la alineación del subtítulo */
+		width: auto; /* Ancho automático */
+		margin-top: 3%; /* Reducir el margen superior */
+		justify-content: flex-end; /* Centrar contenido */
+		font-size: 14px; /* Reducir tamaño de la fuente */
+	  }
+
+	  form {
+		/* Ajustar el posicionamiento, el ancho y la dirección del flex */
+		top: 0; /* Restablecer la posición superior */
+		left: 0; /* Restablecer la posición izquierda */
+		margin-top: 20%;
+		transform: none; /* Quitar transformación */
+		width: auto; /* Ancho automático */
+		flex-direction: column; /* Cambiar la dirección del flex a columna */
+		align-items: center; /* Centrar elementos horizontalmente */
+	  }
+
+	  .form-column {
+		/* Ajustar el ancho y restablecer el float */
+		width: 100%; /* Usar el ancho completo */
+		float: none; /* Eliminar el float */
+	  }
+
+	  input,
+	  .submit-btn {
+		/* Ajustar el ancho del input y del botón */
+		width: 85%; /* Ajustar el ancho para incluir el padding */
+		height: 25%;
+		margin: 3%; /* Ajustar margen para asegurar espaciado vertical */
+		margin-right: 0; /* Restablecer el margen derecho */
+	  }
+
+	  .submit-btn {
+		/* Ajustar el posicionamiento y la dimensión del botón de envío */
+		position: static; /* Restablecer la posición */
+		width: calc(100% - 20px); /* Ajustar el ancho para incluir el padding */
+		height: auto; /* Altura automática */
+		margin: 10%; /* Añadir margen superior */
+		border-width: 2px; /* Ajustar el ancho del borde */
+	  }
+
+/*- - - - - - - - -	SECTION 6	- - - - - - - - -*/
+
+
+	  .landing_section6 {
+		/* Se mantiene el ancho al 100% y se ajusta la altura */
+		height: auto; /* Altura automática para ajustarse al contenido */
+		min-height: 70vh; /* Mínimo de altura de la ventana gráfica */
+		padding-top: 10%;
+	  }
+
+	  .tittle_faq {
+		/* Ajustar el padding y reducir el tamaño de la fuente para el título */
+		padding: 5%; /* Padding uniforme */
+		font-size: 24px; /* Tamaño de fuente reducido */
+		line-height: 120%; /* Ajustar el espaciado de línea */
+		letter-spacing: normal; /* Restablecer el espaciado de letras */
+		margin-bottom: 20px; /* Ajustar el margen inferior */
+	  }
+
+	  .faq-container {
+		/* Ajustar el ancho y los márgenes del contenedor de preguntas frecuentes */
+		width: 90%; /* Ajustar el ancho al 90% del contenedor padre */
+		margin-top: 12%; /* Ajustar el margen superior */
+		padding: 1%; /* Reducir el padding */
+		box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Ajustar la sombra */
+	  }
+
+	  .faq-item {
+		/* Ajustar los márgenes de cada ítem */
+		margin-bottom: 5%; /* Reducir el margen inferior */
+	  }
+
+	  .faq-question {
+		/* Ajustar el tamaño de fuente y el margen de las preguntas */
+		font-size: 14px; /* Reducir el tamaño de la fuente */
+		margin-bottom: 3%; /* Ajustar el margen inferior */
+	  }
+
+	  .faq-question.active {
+		/* Ajustar el tamaño de fuente para las preguntas activas */
+		font-size: 16px; /* Ligeramente mayor para destacar */
+	  }
+
+	  .faq-answer {
+		/* Ajustar el tamaño de fuente y los márgenes de las respuestas */
+		font-size: 12px; /* Reducir el tamaño de la fuente */
+		margin-left: 4%; /* Ajustar el margen izquierdo */
+		margin-bottom: 2%; /* Ajustar el margen inferior */
+	  }
+
+
+	  /*- - - - - - - - -	SECTION FOOTER	- - - - - - - - -*/
+
+	  footer {
+		/* El footer ya es relativamente responsive, pero podrías querer ajustar el padding */
+		position: static; /* Cambiar a static si no quieres que esté absolutamente posicionado */
+		flex-direction: column;
+	}
+
+	  div.landing_suscribe {
+		/* Cambiar la dirección del flex a columna y ajustar el ancho */
+		width: 95%; /* Usar el ancho completo */
+	  }
+
+	  div.landing_suscribe p,
+	  div.landing_suscribe input,
+	  div.landing_suscribe button {
+		/* Ajustar el ancho y el margen izquierdo para los elementos dentro del div de suscripción */
+		width: auto; /* Ancho automático para usar el disponible */
+		margin-left: 5%; /* Reducir el margen izquierdo */
+		font-size: 16px; /* Ajustar el tamaño de la fuente si es necesario */
+	  }
+
+	  div.landing_suscribe input {
+		/* Ajustar el ancho del input para que se adapte al contenedor */
+		width: 90%; /* Reducir el ancho para que se ajuste al contenedor */
+	  }
+
+	  div.landing_suscribe button {
+		/* Ajustar el tamaño del botón */
+		width: auto; /* Ancho automático */
+		margin-top: 5%; /* Añadir margen superior */
+	  }
+
+	  div.landing_right {
+		/* Ajustar el ancho y cambiar la dirección del flex a columna */
+		width: 100%; /* Usar el ancho completo */
+	  }
+
+	  .footer_section,
+	  div.landing_services,
+	  div.landing_resources,
+	  div.landing_company,
+	  div.landing_followUs,
+	  div.landing_socialmedia{
+		/* Cambiar la dirección del flex a columna para todos estos contenedores */
+		flex-direction: column;
+
+	  }
+
+	  div.landing_legal{
+		  width: 95%;
+		  flex-direction: column;
+	  }
+
+	  .footer_section {
+		/* Ajustar el margen inferior */
+		margin-bottom: 5%;
+		flex-direction: row;
+	  }
+
+	  div.landing_services p.landing_title,
+	  div.landing_resources p.landing_title,
+	  div.landing_company p.landing_title,
+	  div.landing_followUs p.landing_title,
+	  div.landing_legal p {
+		/* Ajustar el tamaño de la fuente para los títulos y el texto legal */
+		font-size: 14px;
+	  }
+
+	  div.landing_services p.landing_items,
+	  div.landing_resources p.landing_items,
+	  div.landing_company p.landing_items,
+	  div.landing_legal p {
+		/* Ajustar el tamaño de la fuente para los elementos */
+		font-size: 14px;
+	  }
+
+	  div.landing_socialmedia {
+		/* Ajustar el margen y el espaciado entre íconos de redes sociales */
+		margin-top: 10px;
+		width: 100%; /* Ajustar el ancho */
+	  }
+
+	  div.landing_socialmedia i {
+		/* Si es necesario, ajustar el tamaño de los íconos de redes sociales */
+		font-size: 20px;
+	  }
+
+	}
